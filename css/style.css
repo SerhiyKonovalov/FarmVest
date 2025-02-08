@@ -231,7 +231,7 @@ body {
 
 .button__border:hover {
   color: #263238;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .button._fw {
@@ -793,6 +793,14 @@ body {
 
 .spollers-pathway__body {
   padding: 0.9375rem 1.875rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
 }
 
 .why-choose__container {
