@@ -258,7 +258,7 @@ body {
 }
 
 .title {
-  color: #FFF;
+  color: #fff;
   font-size: 4.375rem;
   line-height: normal;
   letter-spacing: 0.125rem;
@@ -278,9 +278,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
   border-radius: 1.25rem;
   background: rgba(255, 255, 255, 0.05);
   position: relative;
@@ -296,7 +293,7 @@ body {
 .image-block__circle::before {
   content: "";
   position: absolute;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -343,7 +340,7 @@ body {
 .header._header-scroll {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  background-color: rgba(28, 35, 39, 0.8235294118);
+  background-color: rgba(28, 35, 39, 0.9);
 }
 
 .header__container-big {
@@ -664,6 +661,9 @@ body {
 .how-works__container {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 1.875rem;
 }
 
@@ -675,7 +675,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 2rem;
-  max-width: 30.625rem;
 }
 
 .steps-how-works__icon {
@@ -710,6 +709,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 1.875rem;
 }
 
@@ -768,6 +770,8 @@ body {
   cursor: pointer;
   line-height: 177%;
   gap: 0.625rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .spollers-pathway__title::after {
@@ -779,6 +783,10 @@ body {
           flex: 0 0 1.5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.spollers-pathway__title:hover {
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .spollers-pathway__title._spoller-active {
@@ -1339,19 +1347,19 @@ summary {
   }
 
   .image-block {
-    padding-top: 1.875rem;
+    padding-top: 2.5rem;
   }
 
   .image-block {
-    padding-bottom: 1.875rem;
+    padding-bottom: 2.5rem;
   }
 
   .image-block {
-    padding-left: 1.875rem;
+    padding-left: 1.25rem;
   }
 
   .image-block {
-    padding-right: 1.875rem;
+    padding-right: 1.25rem;
   }
 
   .image-block__circle {
@@ -1945,51 +1953,51 @@ summary {
     }
 }
 
-@supports (padding-top: clamp( 1.875rem , -0.155075188rem  +  10.1503759398vw , 10.3125rem )) {
+@supports (padding-top: clamp( 2.5rem , 0.6203007519rem  +  9.3984962406vw , 10.3125rem )) {
     .image-block {
-      padding-top: clamp( 1.875rem , -0.155075188rem  +  10.1503759398vw , 10.3125rem );
+      padding-top: clamp( 2.5rem , 0.6203007519rem  +  9.3984962406vw , 10.3125rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.875rem , -0.155075188rem  +  10.1503759398vw , 10.3125rem )) {
+@supports not (padding-top: clamp( 2.5rem , 0.6203007519rem  +  9.3984962406vw , 10.3125rem )) {
     .image-block {
-      padding-top: calc(1.875rem + 8.4375 * (100vw - 20rem) / 83.125);
+      padding-top: calc(2.5rem + 7.8125 * (100vw - 20rem) / 83.125);
     }
 }
 
-@supports (padding-bottom: clamp( 1.875rem , -0.155075188rem  +  10.1503759398vw , 10.3125rem )) {
+@supports (padding-bottom: clamp( 2.5rem , 0.6203007519rem  +  9.3984962406vw , 10.3125rem )) {
     .image-block {
-      padding-bottom: clamp( 1.875rem , -0.155075188rem  +  10.1503759398vw , 10.3125rem );
+      padding-bottom: clamp( 2.5rem , 0.6203007519rem  +  9.3984962406vw , 10.3125rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.875rem , -0.155075188rem  +  10.1503759398vw , 10.3125rem )) {
+@supports not (padding-bottom: clamp( 2.5rem , 0.6203007519rem  +  9.3984962406vw , 10.3125rem )) {
     .image-block {
-      padding-bottom: calc(1.875rem + 8.4375 * (100vw - 20rem) / 83.125);
+      padding-bottom: calc(2.5rem + 7.8125 * (100vw - 20rem) / 83.125);
     }
 }
 
-@supports (padding-left: clamp( 1.875rem , 1.6494360902rem  +  1.1278195489vw , 2.8125rem )) {
+@supports (padding-left: clamp( 1.25rem , 0.8740601504rem  +  1.8796992481vw , 2.8125rem )) {
     .image-block {
-      padding-left: clamp( 1.875rem , 1.6494360902rem  +  1.1278195489vw , 2.8125rem );
+      padding-left: clamp( 1.25rem , 0.8740601504rem  +  1.8796992481vw , 2.8125rem );
     }
 }
 
-@supports not (padding-left: clamp( 1.875rem , 1.6494360902rem  +  1.1278195489vw , 2.8125rem )) {
+@supports not (padding-left: clamp( 1.25rem , 0.8740601504rem  +  1.8796992481vw , 2.8125rem )) {
     .image-block {
-      padding-left: calc(1.875rem + 0.9375 * (100vw - 20rem) / 83.125);
+      padding-left: calc(1.25rem + 1.5625 * (100vw - 20rem) / 83.125);
     }
 }
 
-@supports (padding-right: clamp( 1.875rem , 1.6494360902rem  +  1.1278195489vw , 2.8125rem )) {
+@supports (padding-right: clamp( 1.25rem , 0.8740601504rem  +  1.8796992481vw , 2.8125rem )) {
     .image-block {
-      padding-right: clamp( 1.875rem , 1.6494360902rem  +  1.1278195489vw , 2.8125rem );
+      padding-right: clamp( 1.25rem , 0.8740601504rem  +  1.8796992481vw , 2.8125rem );
     }
 }
 
-@supports not (padding-right: clamp( 1.875rem , 1.6494360902rem  +  1.1278195489vw , 2.8125rem )) {
+@supports not (padding-right: clamp( 1.25rem , 0.8740601504rem  +  1.8796992481vw , 2.8125rem )) {
     .image-block {
-      padding-right: calc(1.875rem + 0.9375 * (100vw - 20rem) / 83.125);
+      padding-right: calc(1.25rem + 1.5625 * (100vw - 20rem) / 83.125);
     }
 }
 
