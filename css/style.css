@@ -410,6 +410,10 @@ body {
   transition: color 0.3s;
 }
 
+.menu__link._navigator-active {
+  color: #0ad80a;
+}
+
 .icon-menu {
   display: none;
 }
@@ -828,11 +832,11 @@ summary {
 .why-choose__image {
   text-align: center;
   overflow: hidden;
+  border-radius: 1.25rem;
 }
 
 .why-choose__image img {
   max-width: 100%;
-  border-radius: 1.25rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
